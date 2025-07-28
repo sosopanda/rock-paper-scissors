@@ -62,4 +62,11 @@ function playRound(){
 
 }
 
-playRound();
+function playGame(){
+    for (let i = 0 ; i < 5 ; i++){
+        playRound();
+        console.log("Current score: " + humanScore + " - " + computerScore);
+    }
+}
+
+playGame();
